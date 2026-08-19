@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Maintenance | Vibha Shukla</title>
+  <meta name="description" content="AI product-management case study: reducing unplanned downtime with AI-assisted repair-versus-replace decisions.">
+
+  <style>
+    :root {
+      --navy: #0f2742;
+      --teal: #087f8c;
+      --ink: #1f2937;
+      --muted: #5d6774;
+      --paper: #f8fafc;
+      --white: #ffffff;
+      --line: #dbe3eb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(900px, 90%);
+      margin: 0 auto;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 78px 0 54px;
+      background: linear-gradient(135deg, #eaf7f7 0%, #ffffff 75%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 { color: var(--navy); }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.12;
+      margin: 14px 0 20px;
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      margin: 0 0 14px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .intro {
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.13rem;
+    }
+
+    main {
+      padding: 58px 0 78px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    .at-a-glance {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .detail {
+      padding: 20px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .detail-label {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+    }
+
+    .detail-value {
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .highlight {
+      border-left: 4px solid var(--teal);
+      background: #edf8f8;
+      padding: 24px;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .workflow-step {
+      position: relative;
+      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: var(--navy);
+      font-size: 0.94rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li { margin-bottom: 9px; }
+
+    .confidentiality {
+      padding: 20px;
+      color: var(--muted);
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      padding: 30px 0;
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 700px) {
+      .at-a-glance,
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-content {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero { padding: 58px 0 42px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container nav-content">
+      <a class="brand" href="index.html">Vibha Shukla</a>
+      <a href="index.html">← Back to portfolio</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">AI Product Management Case Study</div>
+      <h1>Reducing Unplanned Downtime with AI-Assisted Repair-vs.-Replace Decisions</h1>
+      <p class="intro">
+        I helped lead product strategy and delivery for an enterprise asset-management
+        analytics capability that combined IoT telemetry, ERP workflows, Azure, Power BI,
+        and predictive analytics to improve asset-lifecycle and capital-planning decisions.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section>
+        <h2>At a glance</h2>
+        <div class="at-a-glance">
+          <div class="detail">
+            <span class="detail-label">Role</span>
+            <span class="detail-value">Product Owner / Product Manager</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Product type</span>
+            <span class="detail-value">Enterprise asset-management analytics and predictive-maintenance capability</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Primary users</span>
+            <span class="detail-value">Asset management, operations, maintenance, and capital-planning stakeholders</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Outcome</span>
+            <span class="detail-value">Helped reduce unplanned operational downtime by 20%</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>The problem</h2>
+        <p>
+          Operational teams needed to make high-impact repair-versus-replace decisions
+          using fragmented asset, maintenance, ERP, and telemetry data. Delayed or
+          inconsistent decisions could increase maintenance cost, elevate equipment-failure
+          risk, and contribute to unplanned downtime.
+        </p>
+      </section>
+
+      <section>
+        <h2>My role</h2>
+        <p>
+          I owned product strategy, roadmap development, backlog prioritization, requirements,
+          stakeholder alignment, delivery planning, and KPI definition. I partnered with
+          engineering, data science, architecture, and business teams to bring predictive
+          capabilities into an enterprise product workflow.
+        </p>
+      </section>
+
+      <section>
+        <h2>Product approach</h2>
+        <p>
+          We combined real-time IoT telemetry with relevant asset and operational information
+          to support predictive asset-lifecycle decisions. The product was designed to provide
+          actionable decision support rather than treat model output as an automatic replacement
+          for operational judgment.
+        </p>
+
+        <div class="workflow">
+          <div class="workflow-step">IoT telemetry</div>
+          <div class="workflow-step">Asset, maintenance, and ERP data</div>
+          <div class="workflow-step">Predictive-maintenance analysis</div>
+          <div class="workflow-step">Repair-versus-replace decision support</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Key tradeoff: precision versus recall</h2>
+        <div class="highlight">
+          <p>
+            A central product decision was how to balance precision and recall. A more sensitive
+            model may flag more potential equipment risks but create unnecessary maintenance work.
+            A more precise model may reduce false alarms but miss assets that require intervention.
+          </p>
+          <p>
+            I worked with cross-functional teams to evaluate this tradeoff against maintenance cost,
+            equipment-failure exposure, and operational outcomes.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Measurement</h2>
+        <ul>
+          <li>Unplanned operational downtime</li>
+          <li>Predictive-maintenance impact</li>
+          <li>Data quality and completeness</li>
+          <li>Operational adoption and stakeholder confidence</li>
+          <li>Business outcomes associated with asset-lifecycle decisions</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Outcome</h2>
+        <p>
+          The predictive asset-lifecycle management capabilities helped reduce unplanned
+          operational downtime by 20% while improving the quality of asset-management and
+          capital-planning decisions.
+        </p>
+      </section>
+
+      <section>
+        <h2>What I learned</h2>
+        <p>
+          AI-enabled operational products require more than model performance. Adoption depends
+          on trusted data, understandable recommendations, workflow fit, appropriate human
+          oversight, and metrics that connect predictive quality to business consequences.
+        </p>
+      </section>
+
+      <section class="confidentiality">
+        <strong>Confidentiality note:</strong> This case study uses sanitized descriptions and
+        representative visuals to protect confidential information.
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Vibha Shukla · AI Product Manager | Technical Product Manager
+    </div>
+  </footer>
+</body>
+</html>
