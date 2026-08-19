@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibha Shukla | AI Product Manager</title>
+  <meta name="description" content="AI Product Manager portfolio for Vibha Shukla.">
+  <style>
+    :root {
+      --navy: #0f2742;
+      --teal: #087f8c;
+      --ink: #1f2937;
+      --muted: #5d6774;
+      --paper: #f8fafc;
+      --line: #dbe3eb;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
+
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+    }
+
+    .nav-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      color: var(--navy);
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 92px 0 72px;
+      background: linear-gradient(135deg, #eef7f8, #ffffff);
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    h1, h2, h3 { color: var(--navy); }
+
+    h1 {
+      max-width: 820px;
+      font-size: clamp(2.3rem, 5vw, 4.5rem);
+      line-height: 1.08;
+      margin: 14px 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin: 0 0 24px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.15rem;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: var(--navy);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    section { padding: 68px 0; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    .metric {
+      color: var(--teal);
+      font-size: 2.25rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .card p { color: var(--muted); }
+
+    .case-card h3 { margin-top: 0; }
+
+    .case-card a {
+      color: var(--teal);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .about {
+      background: var(--white);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    footer {
+      padding: 32px 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      .nav-content { align-items: flex-start; flex-direction: column; }
+      .hero { padding: 64px 0 48px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="container nav-content">
+      <a class="logo" href="/">Vibha Shukla</a>
+      <a class="nav-link" href="https://www.linkedin.com/in/vibha-shukla-pgp-ai-ml-business-applications-2040324" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">AI Product Manager | Technical Product Manager</div>
+        <h1>Building enterprise AI, data, and SaaS products for better decisions.</h1>
+        <p>
+          I lead 0→1 AI initiatives and scaled enterprise platforms across
+          predictive analytics, LLM-enabled MVPs, cloud integrations, APIs,
+          operational analytics, and data products.
+        </p>
+        <div class="buttons">
+          <a class="button" href="#work">View selected work</a>
+          <a class="button secondary" href="mailto:vibha.shukla@gmail.com">Contact me</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Selected impact</h2>
+        <div class="grid">
+          <article class="card">
+            <div class="metric">20%</div>
+            <p>Reduction in unplanned operational downtime through predictive asset-lifecycle management capabilities.</p>
+          </article>
+          <article class="card">
+            <div class="metric">$55M+</div>
+            <p>Annual recurring revenue supported by an enterprise OEM integration platform.</p>
+          </article>
+          <article class="card">
+            <div class="metric">75M+</div>
+            <p>Monthly transactions processed across 300+ transaction types and 25,000+ dealership endpoints.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <h2>Selected work</h2>
+        <div class="grid">
+          <article class="card case-card">
+            <h3>AI-Assisted Repair vs. Replace</h3>
+            <p>Predictive maintenance, IoT telemetry, operational decision support, and precision-versus-recall product tradeoffs.</p>
+            <a href="predictive-maintenance.html">Read case study →</a>
+          </article>
+          <article class="card case-card">
+            <h3>LLM Decision-Support MVP</h3>
+            <p>LLM product planning, prompt guidelines, evaluation harnesses, feedback loops, and enterprise safety guardrails.</p>
+            <a href="llm-mvp.html">Read case study →</a>
+          </article>
+          <article class="card case-card">
+            <h3>OEM Integration Platform</h3>
+            <p>High-scale APIs, enterprise SaaS, cloud modernization, and product delivery across automotive OEM integrations.</p>
+            <a href="oem-platform.html">Read case study →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2>How I work</h2>
+        <p>
+          I begin with users, workflows, and business risk; translate ambiguous
+          opportunities into product strategy and measurable outcomes; and partner
+          with engineering, data science, architecture, design, and business teams
+          through discovery, delivery, launch, and iteration.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Vibha Shukla · Case studies use sanitized descriptions and representative visuals to protect confidential information.
+    </div>
+  </footer>
+</body>
+</html>
