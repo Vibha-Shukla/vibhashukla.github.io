@@ -1,0 +1,362 @@
+<article>
+  <h1>AI-Enabled Commercial HVAC Asset-Management Model</h1>
+
+  <p>
+    I’d model the asset as a commercial HVAC system in Saudi Arabia, with an
+    AI/LLM layer processing <strong>10,000 maintenance-related requests per
+    day</strong>.
+  </p>
+
+  <p>
+    For the token price, I’ll use an illustrative
+    <strong>$0.002 per 1K input tokens</strong> plus
+    <strong>$0.008 per 1K output tokens</strong>. This provides a transparent
+    model without tying the example to a particular vendor.
+  </p>
+
+  <h2>1. Base assumptions</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Assumption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Asset</td>
+        <td>Commercial HVAC system</td>
+      </tr>
+      <tr>
+        <td>Location</td>
+        <td>Saudi Arabia</td>
+      </tr>
+      <tr>
+        <td>Requests</td>
+        <td>10,000 per day</td>
+      </tr>
+      <tr>
+        <td>Days per year</td>
+        <td>365</td>
+      </tr>
+      <tr>
+        <td>Requests per year</td>
+        <td>3,650,000</td>
+      </tr>
+      <tr>
+        <td>Input tokens per request</td>
+        <td>1,500</td>
+      </tr>
+      <tr>
+        <td>Output tokens per request</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Input price</td>
+        <td>$0.002 per 1K tokens</td>
+      </tr>
+      <tr>
+        <td>Output price</td>
+        <td>$0.008 per 1K tokens</td>
+      </tr>
+      <tr>
+        <td>HVAC operating life</td>
+        <td>15 years</td>
+      </tr>
+      <tr>
+        <td>Analysis horizon</td>
+        <td>10 years</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Cost per request</h3>
+
+  <p>
+    The cost per request is calculated as follows:
+  </p>
+
+  <p>
+    <code>
+      Cost<sub>request</sub> =
+      (1,500 / 1,000 &times; $0.002) +
+      (500 / 1,000 &times; $0.008)
+    </code>
+  </p>
+
+  <p>
+    <code>
+      Cost<sub>request</sub> = $0.003 + $0.004 = $0.007 per request
+    </code>
+  </p>
+
+  <h3>Daily and annual AI processing cost</h3>
+
+  <p>
+    At 10,000 requests per day:
+  </p>
+
+  <p>
+    <code>
+      10,000 &times; $0.007 = $70 per day
+    </code>
+  </p>
+
+  <p>
+    Annual AI processing cost:
+  </p>
+
+  <p>
+    <code>
+      3,650,000 &times; $0.007 = $25,550 per year
+    </code>
+  </p>
+
+  <h2>2. Connecting AI to HVAC asset management</h2>
+
+  <p>
+    Tokens &times; price &times; volume represent only the AI operating cost. The
+    asset-management model should connect that cost to the HVAC system’s
+    physical operating decisions.
+  </p>
+
+  <h3>Additional assumptions</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Assumption</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Existing HVAC replacement cost</td>
+        <td>SAR 500,000</td>
+      </tr>
+      <tr>
+        <td>Existing HVAC annual maintenance</td>
+        <td>SAR 80,000</td>
+      </tr>
+      <tr>
+        <td>Reduction in unexpected failures</td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td>Reduction in HVAC energy consumption</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>HVAC annual electricity cost</td>
+        <td>SAR 600,000</td>
+      </tr>
+      <tr>
+        <td>AI processing cost</td>
+        <td>
+          Approximately SAR 95,800 per year using an illustrative SAR/USD rate
+          of 3.75
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    The annual AI cost is therefore:
+  </p>
+
+  <p>
+    <code>
+      $25,550 &times; 3.75 = SAR 95,813 per year
+    </code>
+  </p>
+
+  <h3>Potential annual benefits</h3>
+
+  <p>Maintenance savings:</p>
+
+  <p>
+    <code>
+      SAR 80,000 &times; 15% = SAR 12,000
+    </code>
+  </p>
+
+  <p>Energy savings:</p>
+
+  <p>
+    <code>
+      SAR 600,000 &times; 5% = SAR 30,000
+    </code>
+  </p>
+
+  <p>Total quantified annual benefit:</p>
+
+  <p>
+    <code>
+      TotalBenefit = SAR 12,000 + SAR 30,000 = SAR 42,000
+    </code>
+  </p>
+
+  <p>
+    In this scenario, the AI operating cost is greater than the directly
+    quantified savings, so the project would not yet justify itself.
+  </p>
+
+  <p>
+    This is useful for the model because it forces the analysis to identify
+    additional value from avoided HVAC downtime, emergency repairs, and asset
+    life extension.
+  </p>
+
+  <h2>3. Operate versus replace</h2>
+
+  <p>
+    The decision should be modeled over time. Suppose the existing HVAC system
+    is becoming increasingly unreliable:
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Year</th>
+        <th scope="col">HVAC age</th>
+        <th scope="col">Maintenance</th>
+        <th scope="col">Failure cost</th>
+        <th scope="col">Energy cost</th>
+        <th scope="col">Decision</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>10 years</td>
+        <td>SAR 80,000</td>
+        <td>SAR 30,000</td>
+        <td>SAR 600,000</td>
+        <td>Operate</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>11 years</td>
+        <td>SAR 90,000</td>
+        <td>SAR 40,000</td>
+        <td>SAR 615,000</td>
+        <td>Operate</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>12 years</td>
+        <td>SAR 105,000</td>
+        <td>SAR 60,000</td>
+        <td>SAR 635,000</td>
+        <td>Evaluate</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>13 years</td>
+        <td>SAR 125,000</td>
+        <td>SAR 90,000</td>
+        <td>SAR 660,000</td>
+        <td>Evaluate</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>14 years</td>
+        <td>SAR 150,000</td>
+        <td>SAR 130,000</td>
+        <td>SAR 690,000</td>
+        <td>Replace</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Operating-cost formula</h3>
+
+  <p>
+    The annual cost of continuing to operate the existing HVAC system is:
+  </p>
+
+  <p>
+    <code>
+      Cost<sub>operate,t</sub> =
+      Maintenance<sub>t</sub> +
+      Failure<sub>t</sub> +
+      Energy<sub>t</sub> +
+      AI<sub>t</sub>
+    </code>
+  </p>
+
+  <p>
+    The annual cost after replacement is:
+  </p>
+
+  <p>
+    <code>
+      Cost<sub>replace,t</sub> =
+      ReplacementCost +
+      Maintenance<sub>t,new</sub> +
+      Failure<sub>t,new</sub> +
+      Energy<sub>t,new</sub> +
+      AI<sub>t</sub>
+    </code>
+  </p>
+
+  <p>
+    The model then calculates the cumulative 10-year cost of operating versus
+    replacing the HVAC system.
+  </p>
+
+  <h2>4. Asset-management architecture</h2>
+
+  <p>
+    The 10,000 daily requests are not the asset itself. They are the
+    observations and events that feed the asset-management model.
+  </p>
+
+  <p>
+    A suitable architecture is:
+  </p>
+
+  <p>
+    <code>
+      10K daily transactions &rarr;
+      time-series features &rarr;
+      HVAC condition &rarr;
+      predicted failure, energy, and maintenance cost &rarr;
+      operate-versus-replace decision &rarr;
+      NPV decision
+    </code>
+  </p>
+
+  <h3>Per-request AI cost</h3>
+
+  <p>
+    For each period, the AI processing cost can be represented as:
+  </p>
+
+  <p>
+    <code>
+      AI Cost<sub>t</sub> =
+      Tokens<sub>t</sub> &times;
+      Price<sub>t</sub> &times;
+      Volume<sub>t</sub>
+    </code>
+  </p>
+
+  <p>
+    The actual asset decision is then based on:
+  </p>
+
+  <p>
+    <code>
+      NPV(Operate) versus NPV(Replace)
+    </code>
+  </p>
+
+  <p>
+    <em>
+      Illustrative model only; the figures are not measured Saudi HVAC cost
+      data.
+    </em>
+  </p>
+</articl
