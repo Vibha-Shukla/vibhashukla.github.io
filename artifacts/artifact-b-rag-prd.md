@@ -41,6 +41,12 @@ By employing hybrid retrieval (Dense + BM25), hierarchical chunking, and strict 
 
 ## 3. Technical Architecture & Component Selection
 
+## 3. Technical Architecture & Component Selection
+
+![OEM Telemetry & Maintenance RAG Pipeline Architecture](../artifacts/artifact-b-architecture.png.png)
+
+*Figure 1: End-to-end data flow from PDF ingestion and hybrid chunking to Cohere reranking and schema-constrained LLM output.*
+
 ### 3.1 Chunking Strategy
 * **Approach:** Hierarchical / Parent-Child Chunking.
 * **Parent Chunks:** 1,000 tokens (preserves high-level diagnostic context, multi-step procedures, and table boundaries).
